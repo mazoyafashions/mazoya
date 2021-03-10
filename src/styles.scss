@@ -1,10 +1,17 @@
 
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,900');
 @import './assets/scss/import.scss';
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
 
 /*-------------------------------------------------------------------------------------------
   CSS definations for 
 -------------------------------------------------------------------------------------------*/
+body {
+	background: $white;
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: $base-size*6;
+	color: $font-color;
+}
 
 /* RESET */
 * { 
@@ -57,9 +64,106 @@ $sides: (top, bottom, left, right); // Leave this variable alone
  }
 
 }
-.d {
-    color: $danger;
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	
+	th {	
+		font-weight: bold;
+		text-align: center;
+
+		&:first-child {
+			text-align: left;
+		}
+	}
+
+	td {
+		text-align: center;
+
+		&:first-child {
+			text-align: left;
+		}
+	}
 }
-.h1 {
+
+
+/* Padding left & right None */
+.p-r-n {
+	padding-right:0;
+}
+.p-l-n {
+	padding-left:0;
+}
+
+.m-r-n {
+	margin-right:0;
+}
+.m-l-n {
+	margin-left:0;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+ /* Headding Tag
+/*-------------------------------------------------------------------------------------------*/
+			
+h1 {
+	// (1.125rem = 18px)
+	font-size: $h1;
 	color: $primary;
+	font-weight: $font-weight-semi-bold;
+	margin-bottom:0;
+}
+
+h2 {
+	// (0.875rem = 14px)
+	font-size: $h2;
+	margin-bottom:0;
+}
+
+h3 {
+	// (0.625rem = 10px)
+	font-size: $h3;
+	margin-bottom:0;
+}
+
+h4 {
+	// (1rem = 16px)
+	margin-bottom:0;
+}
+
+h5 {
+	// (1rem = 16px)
+	margin-bottom:0;
+}
+
+h6 {
+	// (1rem = 16px)
+	margin-bottom:0;
+}
+
+/*Theme btn */
+.btn {
+	background: $primary;
+    font-size: $base-font-size;
+	color: $white;
+	font-weight: $font-weight-regular;
+	padding: $base-size*2 $base-size*7.5 $base-size*2 $base-size*7.5 ;
+    line-height: $base-size*12;
+	@include  border-radius($base-size*4);
+	@include box-shadow($base-size*0, $base-size*2, $base-size*3, $shadow-color); 
+}
+  
+.active {
+	background: $background-color!important;
+	color: $primary!important;
+}
+
+.border-line {
+	border: $base-size*0.5 solid $background-color;
+	margin: $base-size*7.5;
+}
+p {
+	margin-bottom: 0!important;
+	font-size: $base-size*6;
 }
