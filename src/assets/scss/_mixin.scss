@@ -7,19 +7,19 @@
     -o-shadow: $x-axis $y-axis $blur $color; 
   }
   
-//   .box-shadow {
-//     @include box-shadow($base-size*0, $base-size*2, $base-size*3, $shadow-color);  // Btn Shadow color
+  .box-shadow {
+    // @include box-shadow($base-size*0, $base-size*2, $base-size*3, $shadow-color);  // Btn Shadow color
 
-//     @include box-shadow($base-size*2, $base-size*2, $base-size*20, $card-shadow);   // Card Shadow
+    // @include box-shadow($base-size*2, $base-size*2, $base-size*20, $card-shadow);   // Card Shadow
 
-//     @include box-shadow($base-size*0, $base-size*8, $base-size*35, $top-shadow);   //Top bar Shadow
+    // @include box-shadow($base-size*0, $base-size*8, $base-size*35, $top-shadow);   //Top bar Shadow
 
-//     @include box-shadow($base-size*0, $base-size*2, $base-size*3, $footer-shadow);   //Footer Shadow
+    // @include box-shadow($base-size*0, $base-size*2, $base-size*3, $footer-shadow);   //Footer Shadow
 
-//     @include box-shadow($base-size*2, $base-size*2, $base-size*3, $footer-shadow);   //Left Nav List Shawow
-//   }
+    // @include box-shadow($base-size*2, $base-size*2, $base-size*3, $footer-shadow);   //Left Nav List Shawow
+  }
 
- 
+//  
   // Border Radius
   @mixin border-radius($radius) {
     border-radius: $radius;

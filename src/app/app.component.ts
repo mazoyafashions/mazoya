@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'mazoya';
+
+
+  isShown: boolean = false; // hidden by default
+  toggleShow() {
+
+    this.isShown = !this.isShown;
+  }
+  
 }

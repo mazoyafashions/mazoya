@@ -2,10 +2,10 @@
 .side-bar {
 
 	.message {
-		background:$secondary;
+		background:$primary;
 		color:$white;
 		position: fixed;
-		top: 0;
+		top: 30px;
 		left: $base-size*-162;
 		width: $base-size*100;
 		height: 100%;
@@ -20,7 +20,6 @@
 		top: $base-size*6;
 
 		}
-
 	}
 
 	#toggle {
@@ -34,8 +33,9 @@
 	#toggle + label {
 		width: $base-size*30;
 		position:fixed;
-		left: $base-size*100;
-		top: $base-size*-3.5;
+		left: $base-size*0;
+		top: $base-size*1.5;
+        font-size: $base-size*9;
 		cursor:pointer;
 		padding:$base-size*5;
 		@include  border-radius($base-size*2);

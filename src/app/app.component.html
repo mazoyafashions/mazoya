@@ -1,24 +1,50 @@
 <div class="top-bar">
     <div class="container-fluid p-l-40 p-r-40">
         <div class="row">
-            <div class="col-md-2">
-                <div class="slide-logo p-b-5">
-                    <img src="../assets/images/logo.svg" width="125" alt="M A Zoya Logo">
+            <div class="col-md-12">
+                <div class="tag-log">
+                    <div class="flex-1">
+                        <p>M A Zoya Fashions</p>
+                    </div>
+                    <div class="flex-1 text-right">
+                        <button><i class="fal fa-cart-plus"></i></button>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <div class="free-delivery">
+                <!-- Start Search bar -->
+                <div class="search-bar">
+                    <div class="input-group mb-3 p-t-8">
+                        <input type="text" class="form-control" placeholder="Search">
+                        <div class="search-icon">
+                            <i class="fas fa-search"></i>
+                        </div>
+                        <div class="input-group-append">
+                            <span class="input-group-text"><i class="fas fa-camera"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Search bar -->
+
+
+
+
+                <!-- <div class="free-delivery">
                     <p>Free Delivery: <span> Take advantage of our time to save event</span></p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div>
-                    <p>checkk</p>
-                </div>
+                </div> -->
+                <!-- <div class="my-account text-right">
+                    <button (click)="toggleShow()">My Account</button>
+                    <ul *ngIf="isShown" id="divshow">
+                        <li>Checkout</li>
+                        <li>Cart</li>
+                        <li>Wishlist</li>
+                        <li>Log In</li>
+                    </ul>
+                </div> -->
             </div>
         </div>
 
-        <!-- =================================================================
+
+
+ <!-- =================================================================
     Start Left Sidebar Css
 ================================================================= -->
         <aside class="left-sidebar">
@@ -27,7 +53,8 @@
                     <div class="row">
                         <input type="checkbox" name="toggle" id="toggle" />
                         <label for="toggle">
-                            <img src="../assets/images/menu.svg" width="20" alt="Menu">
+                            <!-- <img src="../assets/images/menu.svg" width="20" alt="Menu"> -->
+                            <i class="fas fa-bars"></i>
                         </label>
                         <!-- <div class="overlay"></div> -->
                         <div class="message">
@@ -38,53 +65,43 @@
                                 <nav id="nav">
                                     <ul class="mainmenu m-t-90 clearfix">
                                         <li>
-                                            <button><span>Admin</span>
-                                                <img src="../assets/images/profile_arrow.svg" width="10" alt="profile Arrow">
+                                            <button routerLink="home"><span>Home</span>
+                                                <!-- <img src="../assets/images/profile_arrow.svg" width="10"
+                                                    alt="profile Arrow"> -->
                                             </button>
-                                            <ul class="submenu">
-                                                <li>
-                                                    <button class="active"><img
-                                                            src="../assets/images/select_channel.svg"
-                                                            alt="Channels">Channels</button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="../assets/images/advertiser.svg"
-                                                            alt="Advertiser">Advertiser</button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="../assets/images/user.svg"
-                                                            alt="User">User</button>
-                                                </li>
-                                            </ul>
                                         </li>
                                     </ul>
 
                                     <ul class="mainmenu clearfix">
                                         <li>
-                                            <button><span>Product Configrator</span>
+                                            <button routerLink="about"><span>About Us</span>
+                                                <!-- <img src="../assets/images/profile_arrow.svg" width="10" alt="Menu"> -->
+                                            </button>
+                                        </li>
+                                    </ul>
+
+                                    <ul class="mainmenu clearfix">
+                                        <li>
+                                            <button routerLink="about"><span>Products</span>
                                                 <img src="../assets/images/profile_arrow.svg" width="10" alt="Menu">
                                             </button>
                                             <ul class="submenu">
                                                 <li>
-                                                    <button class="active"><img src="../assets/images/select_user.svg"
-                                                            alt="Rate Card">Rate
-                                                        Card</button>
+                                                    <button class="active" routerLink="hair_clips">
+                                                        <img src="../assets/images/select_user.svg" alt="Rate Card">Hair
+                                                        Clips</button>
                                                 </li>
                                                 <li>
                                                     <button><img src="../assets/images/channel.svg"
-                                                            alt="Packages">Packages</button>
+                                                            alt="Packages">Mug</button>
                                                 </li>
                                                 <li>
-                                                    <button><img src="../assets/images/combos.svg"
-                                                            alt="Combos">Combos</button>
+                                                    <button><img src="../assets/images/combos.svg" alt="Combos">Hair
+                                                        Bands</button>
                                                 </li>
                                                 <li>
                                                     <button><img src="../assets/images/user.svg"
-                                                            alt="Schemes">Schemes</button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="../assets/images/simulator.svg"
-                                                            alt="Simulator">Simulator</button>
+                                                            alt="Schemes">Racks</button>
                                                 </li>
                                             </ul>
                                         </li>
@@ -100,16 +117,6 @@
     End Left Sidebar Css
 ================================================================= -->
 
-
-        <!-- <div class="row">
-        <div class="col-md-6">
-            <div>
-                <a routerLink="home">Home</a>
-                <br>
-                <a routerLink="about">About</a>
-            </div>
-        </div>
-    </div> -->
 
         <router-outlet></router-outlet>
     </div>
