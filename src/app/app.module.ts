@@ -38,13 +38,17 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { SideBarComponent } from './side-bar/side-bar.component';
+import { ConstantAreaComponent } from './constant-area/constant-area.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    HairClipsComponent
+    HairClipsComponent,
+    SideBarComponent,
+    ConstantAreaComponent
   ],
   imports: [
     BrowserModule,

@@ -24,9 +24,6 @@
                 </div>
                 <!-- End Search bar -->
 
-
-
-
                 <!-- <div class="free-delivery">
                     <p>Free Delivery: <span> Take advantage of our time to save event</span></p>
                 </div> -->
@@ -43,81 +40,14 @@
         </div>
 
 
-
- <!-- =================================================================
-    Start Left Sidebar Css
-================================================================= -->
-        <aside class="left-sidebar">
-            <div class="side-bar">
-                <div class="container">
-                    <div class="row">
-                        <input type="checkbox" name="toggle" id="toggle" />
-                        <label for="toggle">
-                            <!-- <img src="../assets/images/menu.svg" width="20" alt="Menu"> -->
-                            <i class="fas fa-bars"></i>
-                        </label>
-                        <!-- <div class="overlay"></div> -->
-                        <div class="message">
-                            <div class="slide-logo">
-                                <img src="../assets/images/logo-white.svg" width="125" alt="M A Zoya Logo">
-                            </div>
-                            <div class="side-bar-nav">
-                                <nav id="nav">
-                                    <ul class="mainmenu m-t-90 clearfix">
-                                        <li>
-                                            <button routerLink="home"><span>Home</span>
-                                                <!-- <img src="../assets/images/profile_arrow.svg" width="10"
-                                                    alt="profile Arrow"> -->
-                                            </button>
-                                        </li>
-                                    </ul>
-
-                                    <ul class="mainmenu clearfix">
-                                        <li>
-                                            <button routerLink="about"><span>About Us</span>
-                                                <!-- <img src="../assets/images/profile_arrow.svg" width="10" alt="Menu"> -->
-                                            </button>
-                                        </li>
-                                    </ul>
-
-                                    <ul class="mainmenu clearfix">
-                                        <li>
-                                            <button routerLink="about"><span>Products</span>
-                                                <img src="../assets/images/profile_arrow.svg" width="10" alt="Menu">
-                                            </button>
-                                            <ul class="submenu">
-                                                <li>
-                                                    <button class="active" routerLink="hair_clips">
-                                                        <img src="../assets/images/select_user.svg" alt="Rate Card">Hair
-                                                        Clips</button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="../assets/images/channel.svg"
-                                                            alt="Packages">Mug</button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="../assets/images/combos.svg" alt="Combos">Hair
-                                                        Bands</button>
-                                                </li>
-                                                <li>
-                                                    <button><img src="../assets/images/user.svg"
-                                                            alt="Schemes">Racks</button>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </aside>
-        <!-- =================================================================
-    End Left Sidebar Css
-================================================================= -->
-
+        <app-side-bar></app-side-bar>
 
         <router-outlet></router-outlet>
     </div>
+</div>
+
+<div class="header">
+    <img src="../assets/images/slider/slider1.jpg" width="100%">
+
+    <app-constant-area></app-constant-area>
 </div>
