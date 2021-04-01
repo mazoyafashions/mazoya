@@ -35,10 +35,11 @@
     p {
         font-size: $base-size * 7;
         font-weight: 500;
-        padding-left: $base-size*16;
+        padding-left: $base-size*22;
+        line-height: inherit;
     }
     button{
-        width: $base-size*25;
+        width: $base-size*20;
         
         i{
             font-size: $base-size*9;
@@ -48,6 +49,7 @@
 
 .search-bar {
     position: relative;
+
 
     ::placeholder{
         padding-left: 20px;

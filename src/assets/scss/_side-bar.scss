@@ -7,18 +7,33 @@
 		position: fixed;
 		top: 30px;
 		left: $base-size*-162;
-		width: $base-size*100;
+		width: $base-size*140;
 		height: 100%;
 		transition: left 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 		overflow: hidden;
 		box-sizing: border-box;
 		z-index: 10;	
-        box-shadow: 0px 2px 6px 2px #ccc;
 
 	.slide-logo {
-		position: absolute;
-		left: $base-size*18;
-		top: $base-size*6;
+        position: relative;
+
+        .profile {
+            background:$secondary;
+            height: 60px;
+            color: black;
+            font-size: 40px;
+            padding: $base-size*5 $base-size*7.5;
+            i {
+                color: $border-color;
+            }
+            h4 {
+                display: inline-block;
+                padding-left: $base-size*5;
+                position: relative;
+                top:-8px;
+            }
+
+        }
 
 		}
 	}
@@ -70,10 +85,10 @@
                     color: $font-color;
                     display: block;
                     padding:0 $base-size*8 0 $base-size*10;
-                    line-height:$base-size*20;
+                    line-height:$base-size*25;
 
                     &:first-child {
-                        border-bottom: $base-size*0.1 solid $background-hover;
+                        // border-bottom: $base-size*0.1 solid $background-hover;
                     }
 
                     img {

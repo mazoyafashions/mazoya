@@ -90,18 +90,18 @@ table {
 
 
 /* Padding left & right None */
-.p-r-n {
-	padding-right:0;
+.p-r-0 {
+	padding-right:0!important;
 }
-.p-l-n {
-	padding-left:0;
+.p-l-0 {
+	padding-left:0!important;
 }
 
-.m-r-n {
-	margin-right:0;
+.m-r-0 {
+	margin-right:0!important;
 }
-.m-l-n {
-	margin-left:0;
+.m-l-0 {
+	margin-left:0!important;
 }
 
 ul {
@@ -207,13 +207,96 @@ p {
 	flex: 4;
 }
 
+.mat-h2, .mat-title, .mat-typography h2 {
+	font: 12px;
+}
+
+.header {
+	position: relative;
+	margin-left: -15px!important;
+	margin-right: -15px!important;
+	h1 {
+		position: absolute;
+		top: 50%;
+		left: 10%;
+		margin-top: $base-size*-10;
+	}
+}
+
+/*///////////////////////////////////////////////////
+		Featured Add to Cart Globle class used
+///////////////////////////////////*////////////////
+.featured {
+	.featured-had {
+		padding: $base-size * 20 0 $base-size * 0 0;
+	}
+	.product_name {
+		h3 {
+			line-height: $base-size * 8;
+		}
+	}
+	.product_price {
+		.current_price {
+			font-size: $base-size * 7;
+			font-weight: 600;
+		}
+		.old_price {
+			font-size: $base-size * 7;
+			font-weight: 500;
+			color: $disabled;
+			text-decoration: line-through;
+			padding-left: $base-size * 5;
+		}
+	}
+	.star {
+		i {
+			color: $danger;
+		}
+	}
+	.add-like {
+		border: 1px solid $border-color;
+		border-radius: $base-size*2;
+		margin: $base-size*5 0;
+		i {
+			padding: $base-size*3;
+		}
+		input{
+			width: $base-size*15;
+			text-align: center;
+			margin-left: 10px
+		}
+		button{
+			width: 60%;
+			background: $btn-bg;
+			margin-left: $base-size*7.5;
+
+			i {
+				margin-left: 10px;
+			}
+		}
+	}
+}
 
 
 
-
-
-
-
+.single_banner {
+	position: relative;
+	.offer {
+		position: absolute;
+		top: $base-size*-8;
+		left: $base-size*-6;
+		width: $base-size*17;
+		height: $base-size*17;
+		border-radius: 50%;
+		background: $danger;
+		p{
+			color: $white;
+			text-align: center;
+			line-height: $base-size*6;
+			padding-top: $base-size*3.5;
+		}
+	}
+}
 
 
 

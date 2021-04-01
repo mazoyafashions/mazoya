@@ -11,6 +11,23 @@
         }
     }
 
+    .single_banner {
+        position: relative;
+        .offer {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: $danger;
+            p{
+                color: $white;
+                text-align: center;
+                line-height: $base-size*7.5;
+                padding-top: $base-size*3.5;
+            }
+        }
+    }
+
     .featured {
         .featured-had {
             padding: $base-size * 20 0 $base-size * 0 0;
