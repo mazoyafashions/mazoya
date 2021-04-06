@@ -1,14 +1,4 @@
-.overlay {
-	position: fixed;
-	left: 0px;
-	height: 100%;
-	background: #000;
-	opacity: 0.3;
-	width: 32%;
-	top: 0px;
-	z-index: 1;
-	display: none;
-}
+
 .side-bar #toggle:checked ~ .overlay {
 	width: 100%;
 	display: block;

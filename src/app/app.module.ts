@@ -40,6 +40,7 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { ConstantAreaComponent } from './constant-area/constant-area.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ConstantAreaComponent } from './constant-area/constant-area.component';
     AboutComponent,
     HairClipsComponent,
     SideBarComponent,
-    ConstantAreaComponent
+    ConstantAreaComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

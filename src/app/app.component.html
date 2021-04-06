@@ -12,13 +12,21 @@
                 </div>
                 <!-- Start Search bar -->
                 <div class="search-bar">
+                    <div class="overlay-typ-list" *ngIf="!isShowDivIf" (click)=toggleDisplayDivIf()></div>
                     <div class="input-group m-b-8 p-t-8">
-                        <input type="text" class="form-control" placeholder="Search">
+                        <input (click)=toggleDisplayDivIf()  type="text" class="form-control" placeholder="Search">
                         <div class="search-icon">
                             <i class="fas fa-search"></i>
                         </div>
                         <div class="input-group-append">
                             <span class="input-group-text"><i class="fas fa-camera"></i></span>
+                        </div>
+                        
+                        <div class="type-list" *ngIf="!isShowDivIf">
+                            <ul>
+                                <li>Hair Clip</li>
+                                <li>Hair Clip for Grils</li>
+                            </ul>
                         </div>
                     </div>
                 </div>

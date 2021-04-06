@@ -14,5 +14,11 @@ export class AppComponent {
 
     this.isShown = !this.isShown;
   }
+
+  isShowDivIf = true;
+  
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
   
 }
