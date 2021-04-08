@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
-import { HairClipsComponent } from './hair-clips/hair-clips.component';
 // import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 // import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 // import {MatCheckboxModule} from '@angular/material';
@@ -40,17 +39,15 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { ConstantAreaComponent } from './constant-area/constant-area.component';
-import { ProductDetailsComponent } from './product-details/product-details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    HairClipsComponent,
     SideBarComponent,
     ConstantAreaComponent,
-    ProductDetailsComponent
+    SideBarComponent
   ],
   imports: [
     BrowserModule,
