@@ -11,5 +11,10 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+  
+  isShowDivIf = true;
+  
+  toggleDisplayDivIf() {
+    this.isShowDivIf = !this.isShowDivIf;
+  }
 }
