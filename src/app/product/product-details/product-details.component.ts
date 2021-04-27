@@ -17,4 +17,10 @@ export class ProductDetailsComponent implements OnInit {
   toggleDisplayDivIf() {
     this.isShowDivIf = !this.isShowDivIf;
   }
+    
+  isShowRev = true;
+  
+  toggleDisplayRev() {
+    this.isShowRev = !this.isShowRev;
+  }
 }
