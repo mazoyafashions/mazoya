@@ -39,6 +39,9 @@ import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { SideBarComponent } from './side-bar/side-bar.component';
 import { ConstantAreaComponent } from './constant-area/constant-area.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+import { TopBarComponent } from './top-bar/top-bar.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +50,8 @@ import { ConstantAreaComponent } from './constant-area/constant-area.component';
     AboutComponent,
     SideBarComponent,
     ConstantAreaComponent,
-    SideBarComponent
+    SideBarComponent,
+    TopBarComponent
   ],
   imports: [
     BrowserModule,
@@ -80,7 +84,9 @@ import { ConstantAreaComponent } from './constant-area/constant-area.component';
     MatSnackBarModule,
     MatTableModule,
     MatSortModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    BrowserAnimationsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,8 +1,14 @@
-@import "../assets/scss/import";
+@import "/src/assets/scss/import";
 
 .top-bar {
     background: $secondary;
     height: $base-size * 52;
+    width: 100%;
+    position: fixed;
+    left: 0px;
+    padding: 0 15px;
+    z-index: 1;
+
 
     .my-account {
         position: relative;
@@ -35,7 +41,7 @@
     p {
         font-size: $base-size * 7;
         font-weight: 500;
-        padding-left: $base-size * 22;
+        padding-left: $base-size * 44;
         line-height: inherit;
     }
     button {
@@ -87,28 +93,38 @@
     }
 }
 
-// .search-top-bar {
-//     position: relative;
-//     margin:  $base-size*10 0;
+.fixed-header {
+    position: fixed;
+    z-index:999;
+    height: 50px;
+  }
+  
+  #frugalmap {
+    height: 300px;
+    width: 100%;
+    top: 50px;
+    position: relative;
+    background: #2ab4c0;
+  }
+  
+  .mat-elevation-z5 {
+    position: relative;
+  }
+  
+  .sticky {
+    position: fixed;
+    top: 50px;
+  }
 
-//     .add-item {
-//         text-align: right;
-
-//         button{
-//             width: $base-size*60;
-//             background: $black;
-//             height: $base-size*22;
-//             color: $white;
-//             border-radius: $base-size*12.5;
-//             font-size: $base-size*6;
-
-//             i {
-//                 font-size: $base-size*7;
-//                 padding-right: $base-size*2.5;
-//             }
-
-//         }
-//     }
-// }
-
-
+  
+/*/////////////////////////////////
+  Responsive  MEDIAQUERIES CSS
+/////////////////////////////////*/
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 297px) and (max-width: 768.98px) {
+	.tag-log {
+		p{
+            padding-left: $base-size*22!important;
+        }
+	}
+}

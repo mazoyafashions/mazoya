@@ -386,6 +386,20 @@ p {
 	}
 }
 
+.side-bar #toggle:checked ~ .overlay {
+	width: 100%;
+	display: block;
+	transition: left 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+.mat-drawer-transition .mat-drawer-backdrop {
+	position:fixed!important;
+}
+.mat-drawer-container {
+	background: transparent;
+	z-index: 0;
+}
+
+
 /*///////////////////////////////////////////////////
 				 Review 5 Star
 /*///////////////////////////////////////////////////
@@ -556,7 +570,6 @@ p {
 			height: 2.125rem;
 			border-radius: 50%;
 			background: #a30505;
-			z-index: 2;
 
 			p {
 				color: #fff;
@@ -812,6 +825,8 @@ p {
 	}
 
 	.see-all-review {
+		
+		z-index: 5;
 		button{
 			font-size: $base-size*6;
 		}
