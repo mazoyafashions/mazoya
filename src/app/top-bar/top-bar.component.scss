@@ -9,7 +9,6 @@
     padding: 0 15px;
     z-index: 1;
 
-
     .my-account {
         position: relative;
 
@@ -32,7 +31,62 @@
             }
         }
     }
+    .edit-addres {
+        background: $primary;
+        width: 100%;
+        height: 27px;
+        position: fixed;
+        left: 0;
+
+        .cart-address {
+            position: relative;
+            
+            h6 {
+                font-size: $base-size * 5;
+                color: $white;
+                line-height: $base-size * 14;
+                padding-left: $base-size*6;
+
+                i {
+                    padding: 5px;
+                }
+            }
+        }
+
+        .item:hover .item-overlay.top {
+            top: 0;
+            margin-top: 105px;
+          }
+         
+          .item-overlay {
+            position: fixed;
+            top: 0; right: 0; bottom: 0; left: 0;
+            background: rgba(0,0,0,0.5);
+            overflow: hidden;
+            text-align: center;
+            width: 100%; 
+            height: 34%;
+            transition: top 0.3s, right 0.3s, bottom 0.3s, left 0.3s;
+
+            .in {
+                background: $white;
+                width: 50px;
+                height: 50px;
+                margin: 20px;
+            }
+          }
+          .item-overlay.top {
+            top: 100%;
+          }
+          .item-overlay.bottom {
+            bottom: 100%;
+          }
+        
+    }
 }
+
+
+
 
 .tag-log {
     display: flex;
@@ -68,16 +122,16 @@
     .type-list {
         background: $white;
         width: 100%;
-        min-height: $base-size*20.5;
-        max-height: $base-size*150;
-        border-radius: $base-size*1;
+        min-height: $base-size * 20.5;
+        max-height: $base-size * 150;
+        border-radius: $base-size * 1;
         overflow: auto;
         position: absolute;
-        top: $base-size*21;
+        top: $base-size * 21;
         z-index: 1;
-        
-        li{
-            padding: $base-size*5 $base-size*5;
+
+        li {
+            padding: $base-size * 5 $base-size * 5;
             border-bottom: 1px solid $border-color;
         }
     }
@@ -95,36 +149,35 @@
 
 .fixed-header {
     position: fixed;
-    z-index:999;
+    z-index: 999;
     height: 50px;
-  }
-  
-  #frugalmap {
+}
+
+#frugalmap {
     height: 300px;
     width: 100%;
     top: 50px;
     position: relative;
     background: #2ab4c0;
-  }
-  
-  .mat-elevation-z5 {
+}
+
+.mat-elevation-z5 {
     position: relative;
-  }
-  
-  .sticky {
+}
+
+.sticky {
     position: fixed;
     top: 50px;
-  }
+}
 
-  
 /*/////////////////////////////////
   Responsive  MEDIAQUERIES CSS
 /////////////////////////////////*/
 // Extra small devices (portrait phones, less than 576px)
 @media (min-width: 297px) and (max-width: 768.98px) {
-	.tag-log {
-		p{
-            padding-left: $base-size*22!important;
+    .tag-log {
+        p {
+            padding-left: $base-size * 22 !important;
         }
-	}
+    }
 }
