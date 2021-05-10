@@ -42,6 +42,8 @@ import { ConstantAreaComponent } from './constant-area/constant-area.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { TopBarComponent } from './top-bar/top-bar.component';
+import { AgmCoreModule } from '@agm/core';
+import { GoogleMapComponent } from './google-map/google-map.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +53,8 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     SideBarComponent,
     ConstantAreaComponent,
     SideBarComponent,
-    TopBarComponent
+    TopBarComponent,
+    GoogleMapComponent
   ],
   imports: [
     BrowserModule,
@@ -86,7 +89,10 @@ import { TopBarComponent } from './top-bar/top-bar.component';
     MatSortModule,
     MatPaginatorModule,
     BrowserAnimationsModule,
-    FormsModule
+    FormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCSIFuXPQXel1splGkx5ElXoU1bL60Jn-I'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -19,7 +19,9 @@ export class TopBarComponent implements OnInit {
     this.isShowDivIf = !this.isShowDivIf;
   }
   
-  constructor() { }
+  constructor() {
+    
+   }
 
   ngOnInit(): void {
   }
