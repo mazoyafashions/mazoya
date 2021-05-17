@@ -45,6 +45,7 @@ import { TopBarComponent } from './top-bar/top-bar.component';
 import { AgmCoreModule } from '@agm/core';
 import { GoogleMapComponent } from './google-map/google-map.component';
 import { ModalContentComponent } from './modal-content/modal-content.component';
+import { LoginComponent } from './login/login.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { ModalContentComponent } from './modal-content/modal-content.component';
     SideBarComponent,
     TopBarComponent,
     GoogleMapComponent,
-    ModalContentComponent
+    ModalContentComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
