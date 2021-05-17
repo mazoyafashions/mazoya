@@ -44,6 +44,7 @@ import { FormsModule } from '@angular/forms';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { AgmCoreModule } from '@agm/core';
 import { GoogleMapComponent } from './google-map/google-map.component';
+import { ModalContentComponent } from './modal-content/modal-content.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { GoogleMapComponent } from './google-map/google-map.component';
     ConstantAreaComponent,
     SideBarComponent,
     TopBarComponent,
-    GoogleMapComponent
+    GoogleMapComponent,
+    ModalContentComponent
   ],
   imports: [
     BrowserModule,
