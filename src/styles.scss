@@ -183,6 +183,9 @@ table {
 .p-l-0 {
 	padding-left: 0 !important;
 }
+.p-t-up-130 {
+	padding-top: 130px;
+}
 
 .m-r-0 {
 	margin-right: 0 !important;
@@ -232,7 +235,9 @@ h3 {
 
 h4 {
 	// (1rem = 16px)
+	font-size: $h4 !important;
 	margin-bottom: 0 !important;
+	$font-weight-semi-bold:700;
 }
 
 h5 {
@@ -245,8 +250,8 @@ h6 {
 	margin-bottom: 0 !important;
 }
 
-p{
-	font-size: $base-size*6;
+p {
+	font-size: $base-size * 6;
 }
 
 /*Theme btn */
@@ -302,9 +307,22 @@ p {
 .mat-typography h2 {
 	font: 12px;
 }
-
 .card-body {
 	min-height: $base-size * 87 !important;
+}
+
+#b-l-0 {
+	border-left: none;
+}
+
+#b-t-0 {
+	border-top: none;
+}
+#b-r-0 {
+	border-right: none;
+}
+#b-b-0 {
+	border-bottom: none;
 }
 
 /*///////////////////////////////////
@@ -337,8 +355,6 @@ p {
 
 .header {
 	position: relative;
-	margin-left: -15px !important;
-	margin-right: -15px !important;
 	h1 {
 		position: absolute;
 		top: 50%;
@@ -357,6 +373,61 @@ p {
 	top: 0px;
 	z-index: 1;
 	display: none;
+}
+
+/*///////////////////////////////////////////////////
+				 Right Side Bar
+/*///////////////////////////////////////////////////
+.right-side-section {
+	display: flex;
+
+	.right-sction {
+		width: 60%;
+	}
+	.left-sction {
+		width: 100%;
+	}
+}
+
+.side-bar #toggle:checked ~ .overlay {
+	width: 100%;
+	display: block;
+	transition: left 300ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
+}
+
+
+
+/*///////////////////////////////////////////////////
+				 Mat field
+/*///////////////////////////////////////////////////
+
+.mat-drawer-transition .mat-drawer-backdrop {
+	position:fixed!important;
+}
+.mat-drawer-container {
+	background: transparent;
+	z-index: 0;
+}
+
+.mat-dialog-container {
+	background: $white;
+	color: $black;
+}	
+
+
+/*///////////////////////////////////////////////////
+				 Review 5 Star
+/*///////////////////////////////////////////////////
+.star {
+	i {
+		font-size: $base-size*7;
+		color: $star-col-active;
+		padding: 0 $base-size*1;
+	}
+	span{
+		font-size: $base-size*5;
+		padding-left: $base-size*5;
+	}
 }
 
 /*///////////////////////////////////////////////////
@@ -386,7 +457,7 @@ p {
 	}
 	.star {
 		i {
-			color: $danger;
+			color: $star-col-active;
 		}
 	}
 	.add-like {
@@ -449,7 +520,7 @@ p {
 		i {
 			font-size: $base-size * 6.5;
 			padding: $base-size * 1;
-			color: #fe9e23;
+			color: $star-col-active;
 		}
 		span {
 			font-size: $base-size * 6;
@@ -479,11 +550,14 @@ p {
 			}
 		}
 	}
+	.prod-add-cart {
+		position: relative;
 	.add-to-cart {
 		width: 50%;
 		position: absolute;
 		bottom: 7px;
 		right: 0px;
+	}
 	}
 }
 
@@ -511,7 +585,6 @@ p {
 			height: 2.125rem;
 			border-radius: 50%;
 			background: #a30505;
-			z-index: 2;
 
 			p {
 				color: #fff;
@@ -644,6 +717,7 @@ p {
 			font-weight: 500;
 		}
 		.also-like-list {
+			width: 682px;
 			overflow: auto;
 			white-space: nowrap;
 
@@ -680,19 +754,114 @@ p {
 	.product-informaton {
 		.d-flex {
 			border: 1px solid $gray-mid;
+			border-bottom: none;
 			line-height: $base-size * 20;
+
+			&:last-child {
+				border-bottom: 1px solid #ccc;
+			}
 
 			.flex-2 {
 				background: $gray-light;
-			}
-			&:first-child{
-				border-bottom: none;
 			}
 		}
 		margin-top: 15px;
 		h4 {
 			font-size: $base-size * 7;
 			font-weight: 500;
+		}
+	}
+	.additional-info{
+		h4 {
+			font-size: $base-size * 6!important;
+			font-weight: 500;
+
+			span{
+				padding-left: $base-size*5;
+				font-weight: normal;
+			}
+		}
+	}
+	.customer-reviews {
+
+		.star{
+			i {
+				color: $star-col-active;
+				padding: 0 $base-size*1;
+			}
+			span{
+				font-size: $base-size*6;
+				padding-left: $base-size*5;
+			}
+		}
+
+		h4{
+			font-size: $base-size*7!important;
+			font-weight: 500;
+		}
+	}
+	.review-list {
+
+		i {
+			color: $gray-mid;
+			font-size: $base-size*15;
+			margin-top: $base-size*5;
+		}
+		.rev-name {
+			padding-left: $base-size*5;
+			font-size: $base-size*6;
+			position: relative;
+			top: -7px;
+		}
+		.star {
+			i {
+				font-size: $base-size*7;
+				color: $star-col-active;
+				padding: 0 $base-size*1;
+			}
+			span{
+				font-size: $base-size*5;
+				padding-left: $base-size*5;
+				color: $danger;
+			}
+		}
+		.review-title {
+			h4{
+				font-size: $base-size*5!important;
+			}
+			h6{
+				font-size: $base-size*4!important;
+				color: $gray-dark;
+			}
+			p{
+				font-size: $base-size*5;
+			}
+		}
+	}
+
+	.see-all-review {
+		
+		z-index: 5;
+		button{
+			font-size: $base-size*6;
+		}
+		.global-rat {
+			span{
+				font-size: $base-size*5;
+				color: $gray-dark;
+			}
+			.five-star {
+				width: 12%;
+				font-size: $base-size*5;
+			}
+			.bar {
+				width: 80%;
+			}
+			.percentage{
+				width: 12%;
+				font-size: $base-size*5;
+				text-align: right;
+			}
 		}
 	}
 }
@@ -719,6 +888,21 @@ p {
 @media (min-width: 768px) and (max-width: 991.98px) {
 }
 
+// Large devices (desktops, 992px and up)
+@media (min-width: 320px) and (max-width: 1199.98px) {
+	.right-side-section {
+		.right-sction {
+			display: none;
+		}
+	}
+	.header {
+		margin-left: -15px !important;
+		margin-right: -15px !important;
+	}
+	.also-like-list {
+		width: 100%!important;
+	}
+}
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) and (max-width: 1199.98px) {
 }

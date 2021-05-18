@@ -47,6 +47,7 @@
     transform: scale(1);
     transition: transform 0.5s;
     position: relative;
+    z-index: -1;
     
     display: flex;
     justify-content: center;
