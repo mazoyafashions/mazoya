@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e4f3da2c-d8b6-486b-9ff5-986908850c11" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1rk43EfdE4OKRk6gClTxQudyQRA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunAnythingCache">
+    <myKeys>
+      <visibility group="Gradle tasks" flag="true" />
+      <visibility group="Recent projects" flag="true" />
+      <visibility group="Run configurations" flag="true" />
+      <visibility group="com.intellij.ide.actions.runAnything.RunAnythingRunConfigurationProvider" flag="true" />
+      <visibility group="com.intellij.ide.actions.runAnything.activity.RunAnythingRecentProjectProvider" flag="true" />
+      <visibility group="org.jetbrains.plugins.gradle.execution.GradleRunAnythingProvider" flag="true" />
+    </myKeys>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e4f3da2c-d8b6-486b-9ff5-986908850c11" name="Default Changelist" comment="" />
+      <created>1619506554938</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1619506554938</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1619511793615">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="67" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1619511793615" />
+    <state x="168" y="120" width="1200" height="584" key="AVDManager" timestamp="1619511801071">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="168" y="120" width="1200" height="584" key="AVDManager/0.0.1536.824@0.0.1536.824" timestamp="1619511801071" />
+    <state x="770" y="293" key="FileChooserDialogImpl" timestamp="1619512010939">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="770" y="293" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1619512010939" />
+    <state x="565" y="133" key="RollbackChangesDialog" timestamp="1619511744674">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="565" y="133" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1619511744674" />
+    <state width="254" height="198" key="RunAnythingAction_Filter_Popup" timestamp="1619507319261">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="254" height="198" key="RunAnythingAction_Filter_Popup/0.0.1536.824@0.0.1536.824" timestamp="1619507319261" />
+    <state x="426" y="190" key="run.anything.popup" timestamp="1619508158022">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="426" y="190" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1619508158022" />
+  </component>
+</project>
